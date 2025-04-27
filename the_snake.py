@@ -1,4 +1,4 @@
-from random import choice, randint
+from random import randint
 
 import pygame
 
@@ -180,8 +180,8 @@ def main():
             snake.eat()
             while True:
                 if apple.position not in snake.position:
-                    apple.randomize_position(SCREEN_WIDTH,
-                        SCREEN_HEIGHT)
+                    apple.randomize_position(
+                        SCREEN_WIDTH, SCREEN_HEIGHT)
                     break
 
         # Проверка столкновения змейки с собой
